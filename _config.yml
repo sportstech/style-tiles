@@ -7,6 +7,8 @@
 
 # Site settings
 title: STI Style Tiles
+project_name: Project Name
+adjectives: Intuitive, Modern, Masculine, Sporty, Established
 email: staff@sportstechinc.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this

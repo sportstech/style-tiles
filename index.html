@@ -2,22 +2,29 @@
 layout: default
 ---
 
-<div class="home">
+<div class="content">
+  <section class="typography">
+    <h1>Typography</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In nulla delectus error beatae, vitae dolorem repudiandae expedita est, perspiciatis corporis vel qui temporibus laborum quam itaque quae illum atque! Ut.</p>
+    <p><a href="#">Default Link Style</a></p>
+  </section>
 
-  <h1 class="page-heading">Posts</h1>
+  <section class="action-items">
+    <button>Button</button>
+    <a href="#" class="btn">Button Link</a>
+  </section>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <section class="color-scheme">
+    <h1>Color Scheme</h1>
+    <div class="color-primary"></div>
+    <div class="color-secondary"></div>
+    <div class="color-tertiary"></div>
+  </section>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <section class="adjectives">
+    <h1>Adjectives</h1>
+    <p>{{site.adjectives}}</p>
+  </section>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
