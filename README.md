@@ -42,10 +42,11 @@ For example, here's the adjectives for white label bracket.
 - ...
 
 ## Local Dev
-
-- Switch to the `gh-pages` branch. `git checkout -b gh-pages`
+- `gem install jekyll`
+- `git checkout -b gh-pages`
   - This is the default branch for the project.
-- run: `jekyll serve --baseurl ''`
+- `jekyll serve --baseurl ''`
+
 
 ## Git Hub Pages Deployment
 
