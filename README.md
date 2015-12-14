@@ -8,3 +8,7 @@ Style Tiles are a design deliverable consisting of fonts, colors and interface e
 They help form a common visual language between the designers and the stakeholders and provide a catalyst for discussions around the preferences and goals of the client.
 
 Style Tiles are similar to the paint chips and fabric swatches an interior designer gets approval on before designing a room. An interior designer doesn't design three different rooms for a client at the first kick-off meeting, so why do Web designers design three different webpage mockups?
+
+#Local Dev
+
+run: `jekyll serve --baseurl ''`
