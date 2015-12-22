@@ -1,0 +1,10 @@
+button, *.btn, a.btn
+  @extend %default-transition
+  background-color: palette(primary)
+  color: white
+  border: palette(primary, dark) 1px solid
+  padding: 5px
+  text-decoration: none
+  &:hover 
+    background-color: palette(primary, light)
+    color: white

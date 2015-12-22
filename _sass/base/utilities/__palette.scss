@@ -1,0 +1,33 @@
+// Using .scss to have simple access to sass maps.
+
+$primary: #002B63;
+$secondary: #BA2331;
+$tertiary: #747678;
+$text: #747678;
+
+$palettes: (
+  primary: (
+    base: $primary,
+    light: lighten($primary, 20%),
+    dark: darken($primary, 20%)
+  ),
+  secondary: (
+    base: $secondary,
+    light: lighten($secondary, 20%),
+    dark: darken($secondary, 20%)
+  ),
+  tertiary: (
+    base: $tertiary,
+    light: lighten($tertiary, 20%),
+    dark: darken($tertiary, 20%)
+  ),
+  text: (
+    base: darken($primary, 65%),
+    light: darken($primary, 55%),
+    dark: darken($primary, 80%)
+  )
+);
+
+@function palette($palette, $tone: 'base'){
+  @return map-get(map-get($palettes, $palette), $tone);
+}

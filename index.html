@@ -3,28 +3,36 @@ layout: default
 ---
 
 <div class="content">
-  <section class="typography">
-    <h1>Typography</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In nulla delectus error beatae, vitae dolorem repudiandae expedita est, perspiciatis corporis vel qui temporibus laborum quam itaque quae illum atque! Ut.</p>
-    <p><a href="#">Default Link Style</a></p>
-  </section>
+  <div class="col-left">
+    <section class="color-scheme">
+      <h1>Color Scheme</h1>
+      <div class="color-primary"></div>
+      <div class="color-secondary"></div>
+      <div class="color-tertiary"></div>
+    </section>
+    <section class="action-items">
+      <button>Button</button>
+      <a href="#" class="btn">Button Link</a>
+    </section>
+  </div>
+  <div class="col-right">
+    <section class="typography">
+      <h1>Typography</h1>
+      <p>Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit</strong>. In nulla delectus error beatae, vitae dolorem repudiandae expedita est, perspiciatis corporis vel qui temporibus laborum quam itaque quae illum atque! Ut.</p>
+      <h2>Headline 2</h2>
+      <p>Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit</strong>. In nulla delectus error beatae, vitae dolorem repudiandae expedita est, perspiciatis corporis vel qui temporibus laborum quam itaque quae illum atque! Ut.</p>
+      <ul>
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>consectetur adipisicing elit</li>
+        <li>Sint dolore, architecto quas</li>
+        <li>laborum voluptas pariatur perferendis</li>
+      </ul>
+      <p><a href="#">Default Link Style</a></p>
+    </section>
 
-  <section class="action-items">
-    <button>Button</button>
-    <a href="#" class="btn">Button Link</a>
-  </section>
-
-  <section class="color-scheme">
-    <h1>Color Scheme</h1>
-    <div class="color-primary"></div>
-    <div class="color-secondary"></div>
-    <div class="color-tertiary"></div>
-  </section>
-
-  <section class="adjectives">
-    <h1>Adjectives</h1>
-    <p>{{site.adjectives}}</p>
-  </section>
-
-
+    <section class="adjectives">
+      <h1>Adjectives</h1>
+      <p>{{site.adjectives}}</p>
+    </section>
+  </div>
 </div>

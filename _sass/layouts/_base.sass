@@ -1,0 +1,62 @@
+html 
+  font-size: $base-font-size
+html, body 
+  background-color: palette(tertiary, light)
+header
+  width: 100%
+  text-align: center
+  padding: 20px 0
+  a
+    color: palette(tertiary, dark)
+    text-decoration: none
+footer
+  padding: 20px 0
+  text-align: center
+.content
+  background-color: white
+  padding: 20px 0
+  h1
+    font-size: 2rem
+  h2
+    font-size: 1.5rem
+  h3
+    font-size: 1.25rem
+  h4 
+    font-size: 1.1rem
+  h5, h6
+    font-size: 1rem
+  h1, h2, h3, h4
+    line-height: 1em
+  h2, h3, h4, h5, h6
+    margin-top: 2.5rem
+  p, ul, ol
+    margin: 0 0 2rem 0
+    padding: 0
+  p, ul, ol, li, td
+    color: palette(text)
+    strong
+      color: palette(text, dark)
+  a
+    @extend %default-transition
+    color: palette(secondary)
+    &:hover
+      color: palette(secondary, dark)
+  section
+    margin-bottom: 20px
+  +media-min(768px)
+    display: flex
+    [class^="col-"]
+      flex: 1 0 50%
+      padding: 20px
+.color
+  &-scheme
+    > div 
+      height: 100px
+      width: 100px
+      display: inline-block
+  &-primary
+    background-color: palette(primary)
+  &-secondary
+    background-color: palette(secondary)
+  &-tertiary
+    background-color: palette(tertiary)
